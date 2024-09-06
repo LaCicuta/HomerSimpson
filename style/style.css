@@ -195,6 +195,15 @@ input {
   color: rgb(255, 255, 255);
   transition: 0.2s;
 }
+#perrito {
+  display: block;
+  margin: auto;
+  margin-top: 10%;
+  align-items: center;
+  text-align:center;
+  font-size:xx-large;
+  color: aliceblue;
+}
 
 button {
   background: none;
