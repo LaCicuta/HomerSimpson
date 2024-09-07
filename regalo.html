@@ -5,13 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css" />
     <title>Regalo</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #perrito {
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+        }
+        h1 {
+            text-align: center;
+            padding: 20px;
+            font-size: 1.5em;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media (max-width: 600px) {
+            table, tr, th {
+                display: block;
+            }
+            h1 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
 </head>
-<body style="background-color: black; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+<body>
     <div id="perrito">
-        <table style="margin: 10px auto;">
+        <table>
             <tr>
-                <th><h1 style="text-align: center; padding: 20px;">Vale por un mantenimiento <br> completo de tu PC <br>TKM </h1></th>
+                <th><h1>Vale por: <br>Un mantenimiento completo a tu PC <br>TKM </h1></th>
                 <th><img src="./assets/perrito.webp" alt="perrito"><br></th>
+                <th><img src="./assets/el-gato-bailando-gif-en-usagif.gif" alt="perrito"><br></th>
             </tr>
         </table>
     </div>

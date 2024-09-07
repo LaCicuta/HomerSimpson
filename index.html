@@ -14,7 +14,56 @@
       rel="stylesheet"
       type="text/css"
     />
-
+    <style>
+      @media screen and (max-width: 768px) {
+        .parent {
+          display: none;
+        }
+        .parent-mobile {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .parent-mobile section {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        .div-mobile img {
+          max-width: 80px;
+          height: auto;
+        }
+        .div1-mobile img {
+          max-width: 200px;
+        }
+        .title {
+          font-size: 24px;
+        }
+        .cortina img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+      @media screen and (min-width: 769px) {
+        .parent-mobile {
+          display: none;
+        }
+      }
+      .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .large-button {
+        font-size: 24px;
+        font-weight: 100;
+        padding: 15px 30px;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+        background-color: brown;
+      }
+    </style>
     <title>Feliz Cumplaños Araceli</title>
   </head>
   <body>
@@ -23,7 +72,7 @@
     </div>
 
     <div style="align-self: start;">
-      <h1 class="title">Feliz Cumpleaños Araceli</h1>
+      <p class="title" style="font-size: 70px;">Feliz Cumpleaños Araceli</p>
     </div>
 
     <div class="parent">
@@ -65,18 +114,19 @@
         <div class="div11-mobile div-mobile"><img src="assets/ring.gif" /></div>
       </section>
       <section>
-        
+        <div class="div12-mobile div-mobile"><img src="assets/toaster.gif" /></div>
+        <div class="div13-mobile div-mobile"><img src="assets/mouth.gif" /></div>
+        <div class="div14-mobile div-mobile"><img src="assets/worm.gif" /></div>
+        <div class="div15-mobile div-mobile"><img src="assets/toaster.gif" /></div>
       </section>
     </div>
 
     <div class="cortina-der cortina">
       <img src="assets/der.png" alt="" />
     </div>
-
-
-    <button id="mutedBtn">
-      <img src="assets/muted.png" alt="" class="muted" />
-    </button>
-    <input type="button" value="Click Aquí para canjear tu regalo"  onclick="window.location.href='regalo.html'">
+    
+    <div class="button-container">
+      <input type="button" class="large-button" value="Click Aquí para canjear tu regalo" onclick="window.location.href='regalo.html'">
+    </div>
   </body>
 </html>
