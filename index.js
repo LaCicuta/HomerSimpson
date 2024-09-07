@@ -3,6 +3,7 @@ sound.id = 'audio'
 sound.controls = ''
 sound.src = './assets/backsound.mp3'
 sound.type = 'audio/mp3'
+audio.volume = 0.4
 document.body.appendChild(sound)
 
 function playAudio() {
